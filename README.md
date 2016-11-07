@@ -1,6 +1,8 @@
 # Pixel Art Painter
 This is a small pixel-art painter addon for use with the Godot engine. This actually makes it pretty powerful even though its just a sprite editor, e.g. you can work with Godots powerful cutout pipeline to edit bone-based animations directly, something you can't even do with Spine.
 
+![Alt text](/screenshot.png?raw=true "")
+
 ### Install
 Copy addons folder and all its contents to your project, restart Godot.
 
