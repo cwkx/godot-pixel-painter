@@ -1,0 +1,403 @@
+[gd_scene load_steps=5 format=1]
+
+[ext_resource path="res://addons/painter/icon_transparent.png" type="Texture" id=1]
+
+[sub_resource type="StyleBoxEmpty" id=1]
+
+content_margin/left = -1.0
+content_margin/right = -1.0
+content_margin/top = -1.0
+content_margin/bottom = -1.0
+
+[sub_resource type="StyleBoxEmpty" id=2]
+
+content_margin/left = -1.0
+content_margin/right = -1.0
+content_margin/top = -1.0
+content_margin/bottom = -1.0
+
+[sub_resource type="StyleBoxEmpty" id=3]
+
+content_margin/left = -1.0
+content_margin/right = -1.0
+content_margin/top = -1.0
+content_margin/bottom = -1.0
+
+[node name="HBoxContainer" type="HBoxContainer"]
+
+focus/ignore_mouse = false
+focus/stop_mouse = false
+size_flags/horizontal = 2
+size_flags/vertical = 2
+margin/left = 0.0
+margin/top = 0.0
+margin/right = 40.0
+margin/bottom = 40.0
+alignment = 0
+
+[node name="VSeparator" type="VSeparator" parent="."]
+
+focus/ignore_mouse = false
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 2
+margin/left = 0.0
+margin/top = 0.0
+margin/right = 3.0
+margin/bottom = 40.0
+
+[node name="PaletteMenu" type="MenuButton" parent="."]
+
+focus/ignore_mouse = false
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 2
+margin/left = 7.0
+margin/top = 0.0
+margin/right = 64.0
+margin/bottom = 40.0
+toggle_mode = false
+click_on_press = true
+enabled_focus_mode = 0
+shortcut = null
+text = "Palette"
+flat = true
+items = [ "From Image..", null, false, false, false, -1, 0, null, "", false ]
+
+[node name="SpriteMenu" type="MenuButton" parent="."]
+
+focus/ignore_mouse = false
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 2
+margin/left = 68.0
+margin/top = 0.0
+margin/right = 117.0
+margin/bottom = 40.0
+toggle_mode = false
+click_on_press = true
+enabled_focus_mode = 0
+shortcut = null
+text = "Sprite"
+flat = true
+items = [ "Save As..", null, false, false, false, -1, 0, null, "", false, "Load..", null, false, false, false, -1, 0, null, "", false, "", null, false, false, true, -1, 0, null, "", true, "Resize..", null, false, false, false, -1, 0, null, "", false ]
+
+[node name="PaletteContainer" type="HBoxContainer" parent="."]
+
+editor/display_folded = true
+focus/ignore_mouse = false
+focus/stop_mouse = false
+size_flags/horizontal = 2
+size_flags/vertical = 2
+margin/left = 121.0
+margin/top = 0.0
+margin/right = 151.0
+margin/bottom = 40.0
+custom_constants/separation = -8
+alignment = 0
+
+[node name="0" type="ColorPickerButton" parent="PaletteContainer"]
+
+rect/min_size = Vector2( 30, 0 )
+focus/ignore_mouse = false
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 2
+margin/left = 0.0
+margin/top = 0.0
+margin/right = 30.0
+margin/bottom = 40.0
+custom_styles/hover = SubResource( 1 )
+custom_styles/pressed = SubResource( 2 )
+custom_styles/focus = SubResource( 3 )
+toggle_mode = false
+enabled_focus_mode = 2
+shortcut = null
+icon = ExtResource( 1 )
+flat = true
+align = 0
+color = Color( 0, 0, 0, 0 )
+edit_alpha = true
+
+[node name="1" type="ColorPickerButton" parent="PaletteContainer"]
+
+visibility/visible = false
+rect/min_size = Vector2( 30, 0 )
+focus/ignore_mouse = false
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 2
+margin/left = 22.0
+margin/top = 0.0
+margin/right = 52.0
+margin/bottom = 40.0
+custom_styles/hover = SubResource( 1 )
+custom_styles/pressed = SubResource( 2 )
+custom_styles/focus = SubResource( 3 )
+toggle_mode = false
+enabled_focus_mode = 2
+shortcut = null
+icon = ExtResource( 1 )
+flat = true
+align = 0
+color = Color( 0, 0, 0, 0 )
+edit_alpha = true
+
+[node name="2" type="ColorPickerButton" parent="PaletteContainer"]
+
+visibility/visible = false
+rect/min_size = Vector2( 30, 0 )
+focus/ignore_mouse = false
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 2
+margin/left = 44.0
+margin/top = 0.0
+margin/right = 74.0
+margin/bottom = 40.0
+custom_styles/hover = SubResource( 1 )
+custom_styles/pressed = SubResource( 2 )
+custom_styles/focus = SubResource( 3 )
+toggle_mode = false
+enabled_focus_mode = 2
+shortcut = null
+icon = ExtResource( 1 )
+flat = true
+align = 0
+color = Color( 0, 0, 0, 0 )
+edit_alpha = true
+
+[node name="3" type="ColorPickerButton" parent="PaletteContainer"]
+
+visibility/visible = false
+rect/min_size = Vector2( 30, 0 )
+focus/ignore_mouse = false
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 2
+margin/left = 66.0
+margin/top = 0.0
+margin/right = 96.0
+margin/bottom = 40.0
+custom_styles/hover = SubResource( 1 )
+custom_styles/pressed = SubResource( 2 )
+custom_styles/focus = SubResource( 3 )
+toggle_mode = false
+enabled_focus_mode = 2
+shortcut = null
+icon = ExtResource( 1 )
+flat = true
+align = 0
+color = Color( 0, 0, 0, 0 )
+edit_alpha = true
+
+[node name="4" type="ColorPickerButton" parent="PaletteContainer"]
+
+visibility/visible = false
+rect/min_size = Vector2( 30, 0 )
+focus/ignore_mouse = false
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 2
+margin/left = 88.0
+margin/top = 0.0
+margin/right = 118.0
+margin/bottom = 40.0
+custom_styles/hover = SubResource( 1 )
+custom_styles/pressed = SubResource( 2 )
+custom_styles/focus = SubResource( 3 )
+toggle_mode = false
+enabled_focus_mode = 2
+shortcut = null
+icon = ExtResource( 1 )
+flat = true
+align = 0
+color = Color( 0, 0, 0, 0 )
+edit_alpha = true
+
+[node name="5" type="ColorPickerButton" parent="PaletteContainer"]
+
+visibility/visible = false
+rect/min_size = Vector2( 30, 0 )
+focus/ignore_mouse = false
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 2
+margin/left = 110.0
+margin/top = 0.0
+margin/right = 140.0
+margin/bottom = 40.0
+custom_styles/hover = SubResource( 1 )
+custom_styles/pressed = SubResource( 2 )
+custom_styles/focus = SubResource( 3 )
+toggle_mode = false
+enabled_focus_mode = 2
+shortcut = null
+icon = ExtResource( 1 )
+flat = true
+align = 0
+color = Color( 0, 0, 0, 0 )
+edit_alpha = true
+
+[node name="6" type="ColorPickerButton" parent="PaletteContainer"]
+
+visibility/visible = false
+rect/min_size = Vector2( 30, 0 )
+focus/ignore_mouse = false
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 2
+margin/left = 132.0
+margin/top = 0.0
+margin/right = 162.0
+margin/bottom = 40.0
+custom_styles/hover = SubResource( 1 )
+custom_styles/pressed = SubResource( 2 )
+custom_styles/focus = SubResource( 3 )
+toggle_mode = false
+enabled_focus_mode = 2
+shortcut = null
+icon = ExtResource( 1 )
+flat = true
+align = 0
+color = Color( 0, 0, 0, 0 )
+edit_alpha = true
+
+[node name="7" type="ColorPickerButton" parent="PaletteContainer"]
+
+visibility/visible = false
+rect/min_size = Vector2( 30, 0 )
+focus/ignore_mouse = false
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 2
+margin/left = 154.0
+margin/top = 0.0
+margin/right = 184.0
+margin/bottom = 40.0
+custom_styles/hover = SubResource( 1 )
+custom_styles/pressed = SubResource( 2 )
+custom_styles/focus = SubResource( 3 )
+toggle_mode = false
+enabled_focus_mode = 2
+shortcut = null
+icon = ExtResource( 1 )
+flat = true
+align = 0
+color = Color( 0, 0, 0, 0 )
+edit_alpha = true
+
+[node name="8" type="ColorPickerButton" parent="PaletteContainer"]
+
+visibility/visible = false
+rect/min_size = Vector2( 30, 0 )
+focus/ignore_mouse = false
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 2
+margin/left = 176.0
+margin/top = 0.0
+margin/right = 206.0
+margin/bottom = 40.0
+custom_styles/hover = SubResource( 1 )
+custom_styles/pressed = SubResource( 2 )
+custom_styles/focus = SubResource( 3 )
+toggle_mode = false
+enabled_focus_mode = 2
+shortcut = null
+icon = ExtResource( 1 )
+flat = true
+align = 0
+color = Color( 0, 0, 0, 0 )
+edit_alpha = true
+
+[node name="9" type="ColorPickerButton" parent="PaletteContainer"]
+
+visibility/visible = false
+rect/min_size = Vector2( 30, 0 )
+focus/ignore_mouse = false
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 2
+margin/left = 198.0
+margin/top = 0.0
+margin/right = 228.0
+margin/bottom = 40.0
+custom_styles/hover = SubResource( 1 )
+custom_styles/pressed = SubResource( 2 )
+custom_styles/focus = SubResource( 3 )
+toggle_mode = false
+enabled_focus_mode = 2
+shortcut = null
+icon = ExtResource( 1 )
+flat = true
+align = 0
+color = Color( 0, 0, 0, 0 )
+edit_alpha = true
+
+[node name="BrushContainer" type="HBoxContainer" parent="."]
+
+editor/display_folded = true
+focus/ignore_mouse = false
+focus/stop_mouse = false
+size_flags/horizontal = 2
+size_flags/vertical = 2
+margin/left = 155.0
+margin/top = 0.0
+margin/right = 277.0
+margin/bottom = 40.0
+alignment = 0
+
+[node name="Label" type="Label" parent="BrushContainer"]
+
+focus/ignore_mouse = true
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 0
+margin/left = 0.0
+margin/top = 13.0
+margin/right = 41.0
+margin/bottom = 27.0
+text = "Brush:"
+percent_visible = 1.0
+lines_skipped = 0
+max_lines_visible = -1
+
+[node name="HSlider" type="HSlider" parent="BrushContainer"]
+
+rect/min_size = Vector2( 50, 0 )
+focus/ignore_mouse = false
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 0
+margin/left = 45.0
+margin/top = 12.0
+margin/right = 95.0
+margin/bottom = 28.0
+range/min = 1.0
+range/max = 16.0
+range/step = 1.0
+range/page = 0.0
+range/value = 1.0
+range/exp_edit = false
+range/rounded = true
+tick_count = 0
+ticks_on_borders = false
+focus_mode = 2
+
+[node name="Size" type="Label" parent="BrushContainer"]
+
+focus/ignore_mouse = true
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 0
+margin/left = 99.0
+margin/top = 13.0
+margin/right = 122.0
+margin/bottom = 27.0
+text = "1px"
+percent_visible = 1.0
+lines_skipped = 0
+max_lines_visible = -1
+
+

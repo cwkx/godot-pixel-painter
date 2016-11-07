@@ -1,0 +1,306 @@
+[gd_scene format=1]
+
+[node name="ConfirmationDialog" type="ConfirmationDialog"]
+
+focus/ignore_mouse = false
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 2
+margin/left = -1.0
+margin/top = 7.0
+margin/right = 191.0
+margin/bottom = 203.0
+popup/exclusive = false
+window/title = "Resize Image..."
+dialog/hide_on_ok = true
+
+[node name="VBoxContainer" type="VBoxContainer" parent="."]
+
+focus/ignore_mouse = false
+focus/stop_mouse = false
+size_flags/horizontal = 2
+size_flags/vertical = 2
+margin/left = 10.0
+margin/top = 10.0
+margin/right = 10.0
+margin/bottom = 10.0
+alignment = 0
+
+[node name="GridContainer" type="GridContainer" parent="VBoxContainer"]
+
+focus/ignore_mouse = false
+focus/stop_mouse = false
+size_flags/horizontal = 2
+size_flags/vertical = 2
+margin/left = 0.0
+margin/top = 0.0
+margin/right = 168.0
+margin/bottom = 133.0
+columns = 2
+
+[node name="Label" type="Label" parent="VBoxContainer/GridContainer"]
+
+focus/ignore_mouse = true
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 0
+margin/left = 0.0
+margin/top = 5.0
+margin/right = 78.0
+margin/bottom = 19.0
+text = "New Width:"
+percent_visible = 1.0
+lines_skipped = 0
+max_lines_visible = -1
+
+[node name="WidthBox" type="SpinBox" parent="VBoxContainer/GridContainer"]
+
+focus/ignore_mouse = false
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 2
+margin/left = 82.0
+margin/top = 0.0
+margin/right = 168.0
+margin/bottom = 24.0
+range/min = 1.0
+range/max = 32768.0
+range/step = 1.0
+range/page = 0.0
+range/value = 1.0
+range/exp_edit = false
+range/rounded = true
+editable = true
+prefix = ""
+suffix = "px"
+
+[node name="Label2" type="Label" parent="VBoxContainer/GridContainer"]
+
+focus/ignore_mouse = true
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 0
+margin/left = 0.0
+margin/top = 33.0
+margin/right = 78.0
+margin/bottom = 47.0
+text = "New Height:"
+percent_visible = 1.0
+lines_skipped = 0
+max_lines_visible = -1
+
+[node name="HeightBox" type="SpinBox" parent="VBoxContainer/GridContainer"]
+
+focus/ignore_mouse = false
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 2
+margin/left = 82.0
+margin/top = 28.0
+margin/right = 168.0
+margin/bottom = 52.0
+range/min = 1.0
+range/max = 32768.0
+range/step = 1.0
+range/page = 0.0
+range/value = 1.0
+range/exp_edit = false
+range/rounded = true
+editable = true
+prefix = ""
+suffix = "px"
+
+[node name="Label3" type="Label" parent="VBoxContainer/GridContainer"]
+
+focus/ignore_mouse = true
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 0
+margin/left = 0.0
+margin/top = 87.0
+margin/right = 78.0
+margin/bottom = 101.0
+text = "Alignment:"
+percent_visible = 1.0
+lines_skipped = 0
+max_lines_visible = -1
+
+[node name="ButtonGroup" type="ButtonGroup" parent="VBoxContainer/GridContainer"]
+
+focus/ignore_mouse = false
+focus/stop_mouse = false
+size_flags/horizontal = 2
+size_flags/vertical = 2
+margin/left = 82.0
+margin/top = 56.0
+margin/right = 168.0
+margin/bottom = 133.0
+alignment = 0
+
+[node name="GridContainer" type="GridContainer" parent="VBoxContainer/GridContainer/ButtonGroup"]
+
+focus/ignore_mouse = false
+focus/stop_mouse = false
+size_flags/horizontal = 2
+size_flags/vertical = 2
+margin/left = 0.0
+margin/top = 0.0
+margin/right = 86.0
+margin/bottom = 77.0
+columns = 3
+
+[node name="UL" type="CheckBox" parent="VBoxContainer/GridContainer/ButtonGroup/GridContainer"]
+
+focus/ignore_mouse = false
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 2
+margin/left = 0.0
+margin/top = 0.0
+margin/right = 26.0
+margin/bottom = 23.0
+toggle_mode = true
+click_on_press = true
+enabled_focus_mode = 2
+shortcut = null
+flat = false
+align = 0
+
+[node name="UN" type="CheckBox" parent="VBoxContainer/GridContainer/ButtonGroup/GridContainer"]
+
+focus/ignore_mouse = false
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 2
+margin/left = 30.0
+margin/top = 0.0
+margin/right = 56.0
+margin/bottom = 23.0
+toggle_mode = true
+click_on_press = true
+enabled_focus_mode = 2
+shortcut = null
+flat = false
+align = 0
+
+[node name="UR" type="CheckBox" parent="VBoxContainer/GridContainer/ButtonGroup/GridContainer"]
+
+focus/ignore_mouse = false
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 2
+margin/left = 60.0
+margin/top = 0.0
+margin/right = 86.0
+margin/bottom = 23.0
+toggle_mode = true
+click_on_press = true
+enabled_focus_mode = 2
+shortcut = null
+flat = false
+align = 0
+
+[node name="LM" type="CheckBox" parent="VBoxContainer/GridContainer/ButtonGroup/GridContainer"]
+
+focus/ignore_mouse = false
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 2
+margin/left = 0.0
+margin/top = 27.0
+margin/right = 26.0
+margin/bottom = 50.0
+toggle_mode = true
+click_on_press = true
+enabled_focus_mode = 2
+shortcut = null
+flat = false
+align = 0
+
+[node name="NM" type="CheckBox" parent="VBoxContainer/GridContainer/ButtonGroup/GridContainer"]
+
+focus/ignore_mouse = false
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 2
+margin/left = 30.0
+margin/top = 27.0
+margin/right = 56.0
+margin/bottom = 50.0
+toggle_mode = true
+is_pressed = true
+click_on_press = true
+enabled_focus_mode = 2
+shortcut = null
+flat = false
+align = 0
+
+[node name="RM" type="CheckBox" parent="VBoxContainer/GridContainer/ButtonGroup/GridContainer"]
+
+focus/ignore_mouse = false
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 2
+margin/left = 60.0
+margin/top = 27.0
+margin/right = 86.0
+margin/bottom = 50.0
+toggle_mode = true
+click_on_press = true
+enabled_focus_mode = 2
+shortcut = null
+flat = false
+align = 0
+
+[node name="DL" type="CheckBox" parent="VBoxContainer/GridContainer/ButtonGroup/GridContainer"]
+
+focus/ignore_mouse = false
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 2
+margin/left = 0.0
+margin/top = 54.0
+margin/right = 26.0
+margin/bottom = 77.0
+toggle_mode = true
+click_on_press = true
+enabled_focus_mode = 2
+shortcut = null
+flat = false
+align = 0
+
+[node name="DN" type="CheckBox" parent="VBoxContainer/GridContainer/ButtonGroup/GridContainer"]
+
+focus/ignore_mouse = false
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 2
+margin/left = 30.0
+margin/top = 54.0
+margin/right = 56.0
+margin/bottom = 77.0
+toggle_mode = true
+click_on_press = true
+enabled_focus_mode = 2
+shortcut = null
+flat = false
+align = 0
+
+[node name="DR" type="CheckBox" parent="VBoxContainer/GridContainer/ButtonGroup/GridContainer"]
+
+focus/ignore_mouse = false
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 2
+margin/left = 60.0
+margin/top = 54.0
+margin/right = 86.0
+margin/bottom = 77.0
+toggle_mode = true
+click_on_press = true
+enabled_focus_mode = 2
+shortcut = null
+flat = false
+align = 0
+
+
