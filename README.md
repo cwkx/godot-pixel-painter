@@ -17,6 +17,7 @@ To use, simply select a sprite from editor and you're good to go.
 - Differnt brush sizes
 - "Save As.."" and "Load" sprites with menu
  - Ctrl+S on sprite to save it
+ - Painting supports working on rotated/scaled/offset sprites
 
 ### Todo
 - Fix editor warnings and test/bugfix
