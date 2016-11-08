@@ -4,7 +4,7 @@ This is a small pixel-art painter addon for use with the Godot engine. This actu
 ![Alt text](/screenshot.png?raw=true "")
 
 ### Install
-Copy addons folder and all its contents to your project, restart Godot, then activate plugin from editor settings.
+Requires latest version of godot: http://fixnum.org/godot/ Copy addons folder and all its contents to your project, restart Godot, then activate plugin from editor settings.
 
 ### Features & Usage
 To use, simply select a sprite from editor and you're good to go.
