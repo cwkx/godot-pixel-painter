@@ -129,7 +129,7 @@ func hotkey_to_colorpicker(i):
 	return str(i-1)
 
 func palette_sort_colors(c1,c2):
-	return c1.v < c2.v
+	return c1.v > c2.v
 
 func palette_from_image():
 	var sprite = get_selected_sprite()
