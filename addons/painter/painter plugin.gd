@@ -169,8 +169,8 @@ func color_picker_undo(arr):
 	palette_from_image()
 
 func get_selected_sprite():
-	var selected_object = get_selection().get_selected_nodes()
-	if selected_object.size() != 1 or !(selected_object[0] extends Sprite):
+	var selected_object = get_editor_interface().get_selection().get_selected_nodes()
+	if selected_object.size() != 1 or !(selected_object[0] is Sprite):
 		_toolbar.set_hidden(true)
 		return null
 	else:
@@ -237,7 +237,9 @@ func on_resize_confirmed():
 	var ns = Vector2(_resize.get_node("VBoxContainer/GridContainer/WidthBox").get_value(),_resize.get_node("VBoxContainer/GridContainer/HeightBox").get_value())
 	var selected = _resize.get_node("VBoxContainer/GridContainer/ButtonGroup").get_pressed_button().get_name()
 
-	var img = Image(ns.x, ns.y, false, Image.FORMAT_RGBA)
+	var imgHandler = Image.new()
+	var img = imgHandler.create(ns.x, ns.y, false, Image.FORMAT_RGBA)
+	
 
 	var src_rect = Rect2(0,0, os.x, os.y)
 	var dest_vec = Vector2(0,0)
